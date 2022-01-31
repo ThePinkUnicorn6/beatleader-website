@@ -29,7 +29,34 @@
   $: if (mainEl) containerStore.observe(mainEl)
 </script>
 
-<Router {url}>
+<main>
+  <article>
+    <header>
+      <h1 class="title is-5">Project paused </h1>
+      <div class="container">
+        <div class="panda-icon"></div>
+      </div>
+      
+      <p><a href="https://scoresaber.com" rel="noreferrer">Go to scoresaber.com</a></p>
+    </header>
+
+    <p>Install the <a href="https://github.com/motzel/scoresaber-unranked-acc/raw/master/scoresaber-unranked-acc.user.js">plugin</a> to add replay button to ScoreSaber</p>
+    <p>Check out <a href="https://discord.gg/2RG5YVqtG6">Discord</a> if you interested in future of this project</p>
+
+    <p>...and don't forget about the other great sites that will supplement your data.</p>
+
+    <p>
+      <a href="https://www.beatsavior.io/" rel="noreferrer">Beat Savior</a>
+      <small>detailed data on your swings, install <a href="https://github.com/Mystogan98/BeatSaviorData" rel="noreferrer">BS mod</a> first</small>
+    </p>
+
+    <p>
+      <a href="https://www.accsaber.com/" rel="noreferrer">AccSaber</a>
+      <small>if you want to become an acc champ</small>
+    </p>
+  
+
+<!-- <Router {url}>
   <Nav />
   <Modal closeButton={false} styleWindow={{width: "90vw", height: "65vh"}} styleContent={{padding: 0}}>
 
@@ -58,21 +85,47 @@
     </div>
   </main>
 </Modal>
-</Router>
+</Router> -->
 
 <footer>
   <p class="build">Build: {buildInfo.buildVersion} ({buildInfo.buildDate})</p>
   <p>
-    <a href="/privacy" on:click|preventDefault={() => navigate('/privacy')}>Privacy policy</a> |
-    <a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a> |
+    <!-- <a href="/privacy" on:click|preventDefault={() => navigate('/privacy')}>Privacy policy</a> |
+    <a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a> | -->
     <a href="https://github.com/NSGolova/beatleader-website">Source</a> |
     <a href="https://discord.gg/2RG5YVqtG6">Discord</a>
   </p>
 </footer>
 
+</article>
+</main>
+
 <style>
     main {
-        margin-top: 1em;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+      display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    article > * {
+        text-align: center;
+    }
+    header {
+        margin-bottom: 4rem;
+    }
+    p {
+        margin-bottom: .75rem;
+    }
+    small {
+        display: block;
+        font-size: .75rem;
+        color: #aaa;
     }
 
     .ssr-page-container {

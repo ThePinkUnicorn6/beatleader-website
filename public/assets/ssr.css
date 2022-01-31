@@ -161,6 +161,14 @@ select {
     background-image: url("./replays.svg");
 }
 
+.panda-icon {
+    width: 5em;
+    height: 5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./panda.gif");
+}
+
 .grid-transition-helper {
     display: grid;
     grid-template-columns: 1fr;
