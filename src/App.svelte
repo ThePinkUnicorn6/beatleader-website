@@ -1,5 +1,6 @@
 <script>
   import {setContext} from 'svelte'
+  import {exportJsonData} from './utils/export-import'
   import {Router, Route, navigate} from "svelte-routing";
   import buildInfo from '../build-info';
   import createContainerStore from './stores/container';
@@ -40,10 +41,11 @@
       <p><a href="https://scoresaber.com" rel="noreferrer">Go to scoresaber.com</a></p>
     </header>
 
-    <p>Install the <a href="https://github.com/motzel/scoresaber-unranked-acc/raw/master/scoresaber-unranked-acc.user.js">plugin</a> to add replay button to ScoreSaber</p>
-    <p>Check out <a href="https://discord.gg/2RG5YVqtG6">Discord</a> if you interested in future of this project</p>
+    <p>Install the <a href="https://github.com/motzel/scoresaber-unranked-acc/raw/master/scoresaber-unranked-acc.user.js">plugin</a> to add replay button to ScoreSaber.</p>
+    <p>Check out <a href="https://discord.gg/2RG5YVqtG6">Discord</a> if you interested in future of this project.</p>
+    <p>Download your stored data <a href="/" on:click|preventDefault={() => exportJsonData()}>here</a> (wait a few seconds) </p>
 
-    <p>...and don't forget about the other great sites that will supplement your data.</p>
+    <p>...and don't forget about the other great sites that will supplement your new data.</p>
 
     <p>
       <a href="https://www.beatsavior.io/" rel="noreferrer">Beat Savior</a>
