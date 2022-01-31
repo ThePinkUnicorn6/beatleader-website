@@ -47,3 +47,8 @@
     to = "/index.html"
     status = 200
     force = true
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
