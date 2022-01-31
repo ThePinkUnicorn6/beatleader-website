@@ -49,6 +49,6 @@
     force = true
 
 [[headers]]
-  for = "/*"
+  for = "/cors/score-saber/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
