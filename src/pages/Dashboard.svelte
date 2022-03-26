@@ -124,7 +124,7 @@
                 </a>
             </h3>
             <h3 class="title is-6">
-                <a class="imageLink" href={`https://www.beatsavior.io/`} target="_blank" rel="noreferrer">
+                <a class="imageLink" href={`https://beat-savior.herokuapp.com/`} target="_blank" rel="noreferrer">
                     <span class="icon beatsavior-icon" title="BeatSavior"></span>
                 </a>
             </h3>
